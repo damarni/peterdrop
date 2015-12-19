@@ -4,16 +4,40 @@
         "uninstalled": []
     },
     "config_munge": {
-        "files": {}
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"ImagePicker\"><param name=\"ios-package\" value=\"SOSPicker\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
     },
     "installed_plugins": {
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.mlh.peterDrop"
+        },
+        "com.synconset.imagepicker": {
+            "PACKAGE_NAME": "com.mlh.peterDrop"
         }
     },
     "dependent_plugins": {},
-    "modules": [],
+    "modules": [
+        {
+            "file": "plugins/com.synconset.imagepicker/www/imagepicker.js",
+            "id": "com.synconset.imagepicker.ImagePicker",
+            "pluginId": "com.synconset.imagepicker",
+            "clobbers": [
+                "plugins.imagePicker"
+            ]
+        }
+    ],
     "plugin_metadata": {
-        "cordova-plugin-whitelist": "1.2.0"
+        "cordova-plugin-whitelist": "1.2.0",
+        "com.synconset.imagepicker": "1.0.7"
     }
 }
