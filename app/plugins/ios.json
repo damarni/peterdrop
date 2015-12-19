@@ -9,6 +9,9 @@
     "installed_plugins": {
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.mlh.peterDrop"
+        },
+        "com.synconset.imagepicker": {
+            "PACKAGE_NAME": "com.mlh.peterDrop"
         }
     },
     "dependent_plugins": {}

@@ -39,6 +39,17 @@
 		7E7966E61810823500FA85AD /* icon-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DC1810823500FA85AD /* icon-small.png */; };
 		7E7966E71810823500FA85AD /* icon-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DD1810823500FA85AD /* icon-small@2x.png */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
+		069F780DA1E745A4952D958D /* SOSPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 02D41397A7D243129D7FC36D /* SOSPicker.m */; };
+		B779DE85C9DC45ADA837532A /* ELCAlbumPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD18A5BA3EB4E73B9BB6632 /* ELCAlbumPickerController.m */; };
+		0EEAF1FD0E9641C99FF96873 /* ELCAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F077F2F4EE14EEFBC879F6B /* ELCAsset.m */; };
+		3ED92C84D7134015AB98DFAC /* ELCAssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD37D9CD8314D9EAD28CA37 /* ELCAssetCell.m */; };
+		47029F1C0076453582E8E970 /* ELCAssetTablePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = CA48280DCA384AACA76AB907 /* ELCAssetTablePicker.m */; };
+		C83F05E3A5704951AD5231E3 /* ELCImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C3E1E07B294E4686BE0EAB /* ELCImagePickerController.m */; };
+		D3E37E411D8049E09468868F /* ELCAlbumPickerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 001C3D8D1DB94C05938C63D5 /* ELCAlbumPickerController.xib */; };
+		5F417460CF84445FA9BFEF2F /* ELCAssetPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57F53A63A9E74446B260D5CA /* ELCAssetPicker.xib */; };
+		C4879FBB7DDC4DE2A1185200 /* ELCAssetTablePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 355F24661E2141A2B4E01559 /* ELCAssetTablePicker.xib */; };
+		2C887483DABB4C3F968E5F73 /* Overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B4939A86AF84767AE7ED746 /* Overlay.png */; };
+		0C3F6BD2120048C9B8A5A6B6 /* Overlay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 656E07F211EA45E9BDB31030 /* Overlay@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +115,25 @@
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "PeterDrop/config.xml"; sourceTree = "<group>"; };
+		02D41397A7D243129D7FC36D /* SOSPicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "SOSPicker.m"; path = "com.synconset.imagepicker/SOSPicker.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		DFD18A5BA3EB4E73B9BB6632 /* ELCAlbumPickerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "ELCAlbumPickerController.m"; path = "com.synconset.imagepicker/ELCAlbumPickerController.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		1F077F2F4EE14EEFBC879F6B /* ELCAsset.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "ELCAsset.m"; path = "com.synconset.imagepicker/ELCAsset.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		ECD37D9CD8314D9EAD28CA37 /* ELCAssetCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "ELCAssetCell.m"; path = "com.synconset.imagepicker/ELCAssetCell.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		CA48280DCA384AACA76AB907 /* ELCAssetTablePicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "ELCAssetTablePicker.m"; path = "com.synconset.imagepicker/ELCAssetTablePicker.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		51C3E1E07B294E4686BE0EAB /* ELCImagePickerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "ELCImagePickerController.m"; path = "com.synconset.imagepicker/ELCImagePickerController.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		F4717BB9616F442CB67B1173 /* SOSPicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "SOSPicker.h"; path = "com.synconset.imagepicker/SOSPicker.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		CEEB39B9BBA5436294779E7F /* ELCAlbumPickerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ELCAlbumPickerController.h"; path = "com.synconset.imagepicker/ELCAlbumPickerController.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		C903AD74344047C3BAC16CAF /* ELCAsset.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ELCAsset.h"; path = "com.synconset.imagepicker/ELCAsset.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		744ABED0BBCB49DEAC99A6D6 /* ELCAssetCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ELCAssetCell.h"; path = "com.synconset.imagepicker/ELCAssetCell.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		2955B107EB1D44F5AF166CF7 /* ELCAssetPickerFilterDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ELCAssetPickerFilterDelegate.h"; path = "com.synconset.imagepicker/ELCAssetPickerFilterDelegate.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		57FF739292F64A168DA0A88A /* ELCAssetSelectionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ELCAssetSelectionDelegate.h"; path = "com.synconset.imagepicker/ELCAssetSelectionDelegate.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		1E309FFE3C9E4883B226B44B /* ELCAssetTablePicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ELCAssetTablePicker.h"; path = "com.synconset.imagepicker/ELCAssetTablePicker.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		2B3BB5F41AD941F69B5DB96F /* ELCImagePickerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ELCImagePickerController.h"; path = "com.synconset.imagepicker/ELCImagePickerController.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		001C3D8D1DB94C05938C63D5 /* ELCAlbumPickerController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "ELCAlbumPickerController.xib"; path = "ELCAlbumPickerController.xib"; sourceTree = "<group>"; fileEncoding = 4; };
+		57F53A63A9E74446B260D5CA /* ELCAssetPicker.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "ELCAssetPicker.xib"; path = "ELCAssetPicker.xib"; sourceTree = "<group>"; fileEncoding = 4; };
+		355F24661E2141A2B4E01559 /* ELCAssetTablePicker.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "ELCAssetTablePicker.xib"; path = "ELCAssetTablePicker.xib"; sourceTree = "<group>"; fileEncoding = 4; };
+		7B4939A86AF84767AE7ED746 /* Overlay.png */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "Overlay.png"; path = "Overlay.png"; sourceTree = "<group>"; fileEncoding = 4; };
+		656E07F211EA45E9BDB31030 /* Overlay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "Overlay@2x.png"; path = "Overlay@2x.png"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +206,11 @@
 				308D052D1370CCF300D202BF /* icons */,
 				308D05311370CCF300D202BF /* splash */,
 				8D1107310486CEB800E47090 /* PeterDrop-Info.plist */,
+				001C3D8D1DB94C05938C63D5 /* ELCAlbumPickerController.xib */,
+				57F53A63A9E74446B260D5CA /* ELCAssetPicker.xib */,
+				355F24661E2141A2B4E01559 /* ELCAssetTablePicker.xib */,
+				7B4939A86AF84767AE7ED746 /* Overlay.png */,
+				656E07F211EA45E9BDB31030 /* Overlay@2x.png */,
 			);
 			name = Resources;
 			path = "PeterDrop/Resources";
@@ -202,6 +237,20 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
+				02D41397A7D243129D7FC36D /* SOSPicker.m */,
+				DFD18A5BA3EB4E73B9BB6632 /* ELCAlbumPickerController.m */,
+				1F077F2F4EE14EEFBC879F6B /* ELCAsset.m */,
+				ECD37D9CD8314D9EAD28CA37 /* ELCAssetCell.m */,
+				CA48280DCA384AACA76AB907 /* ELCAssetTablePicker.m */,
+				51C3E1E07B294E4686BE0EAB /* ELCImagePickerController.m */,
+				F4717BB9616F442CB67B1173 /* SOSPicker.h */,
+				CEEB39B9BBA5436294779E7F /* ELCAlbumPickerController.h */,
+				C903AD74344047C3BAC16CAF /* ELCAsset.h */,
+				744ABED0BBCB49DEAC99A6D6 /* ELCAssetCell.h */,
+				2955B107EB1D44F5AF166CF7 /* ELCAssetPickerFilterDelegate.h */,
+				57FF739292F64A168DA0A88A /* ELCAssetSelectionDelegate.h */,
+				1E309FFE3C9E4883B226B44B /* ELCAssetTablePicker.h */,
+				2B3BB5F41AD941F69B5DB96F /* ELCImagePickerController.h */,
 			);
 			name = Plugins;
 			path = "PeterDrop/Plugins";
@@ -355,6 +404,11 @@
 				7E7966E11810823500FA85AD /* icon-50@2x.png in Resources */,
 				7E7966E51810823500FA85AD /* icon-76@2x.png in Resources */,
 				30FC414916E50CA1004E6F35 /* icon-72@2x.png in Resources */,
+				D3E37E411D8049E09468868F /* ELCAlbumPickerController.xib in Resources */,
+				5F417460CF84445FA9BFEF2F /* ELCAssetPicker.xib in Resources */,
+				C4879FBB7DDC4DE2A1185200 /* ELCAssetTablePicker.xib in Resources */,
+				2C887483DABB4C3F968E5F73 /* Overlay.png in Resources */,
+				0C3F6BD2120048C9B8A5A6B6 /* Overlay@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +440,12 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
+				069F780DA1E745A4952D958D /* SOSPicker.m in Sources */,
+				B779DE85C9DC45ADA837532A /* ELCAlbumPickerController.m in Sources */,
+				0EEAF1FD0E9641C99FF96873 /* ELCAsset.m in Sources */,
+				3ED92C84D7134015AB98DFAC /* ELCAssetCell.m in Sources */,
+				47029F1C0076453582E8E970 /* ELCAssetTablePicker.m in Sources */,
+				C83F05E3A5704951AD5231E3 /* ELCImagePickerController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

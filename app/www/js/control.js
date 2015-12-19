@@ -8,6 +8,27 @@ function peterDrop(){
 		this.core.showInterface();	
 	}
 	
+	this.render_select_images = function() {
+		module.controller('ThisCtrl', function($scope, $cordovaImagePicker) {
+			var options = {
+				maximumImagesCount: 10,
+				width: 800,
+				height: 800,
+				quality: 80
+			};
+			
+			$cordovaImagePicker.getPictures(options).then(function (results) {
+				var html = '';
+				for (var i = 0; i < results.length; i++) {
+					html += '<img src="'+ results[i] +'" /><br />';
+				}
+				$('#select_images_container').html(html);
+			}, function(error) {
+				// error getting photos
+			});
+		});
+	}
+	
 	//core class --> control interficie and langs
 	this.core = new DropCore({
 		pages: {
