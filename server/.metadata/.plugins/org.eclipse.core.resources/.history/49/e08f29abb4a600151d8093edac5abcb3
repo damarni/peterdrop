@@ -1,0 +1,50 @@
+package peterDropServer;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+import javax.swing.JFileChooser;
+import javax.swing.JOptionPane;
+
+
+public class CoreCkeck {
+
+	public static void main(String [] args) throws IOException{
+		
+		ServerSocket listener = new ServerSocket(1147);
+        try {
+            while (true) {
+            	System.out.println("Waiting...");
+                Socket socket = listener.accept();
+                System.out.println("Accepted connection");
+                
+                
+                	int dialogButton = JOptionPane.showConfirmDialog (null, "Do you want to save files?", "Warning", JOptionPane.YES_NO_OPTION);
+            		if(dialogButton == JOptionPane.YES_OPTION){
+            			JFileChooser saveFile = new JFileChooser();
+            			saveFile.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+            			int saveOption = saveFile.showSaveDialog(null);
+            			PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
+            			if(saveOption == JFileChooser.APPROVE_OPTION){
+            				PrintWriter writer = new PrintWriter("/peterDropServerPathDown.txt", "UTF-8");
+            				writer.println(saveFile.getCurrentDirectory());
+            				writer.close();
+                            out.println("ok");
+            			}
+            			else {
+            				out.println("ko");
+            			}
+            		}
+                    
+            		socket.close();
+            }
+        }
+        finally {
+            listener.close();
+        }
+
+	}
+
+}

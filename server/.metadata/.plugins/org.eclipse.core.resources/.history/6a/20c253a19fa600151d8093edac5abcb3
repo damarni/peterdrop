@@ -1,0 +1,32 @@
+package peterDropServer;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+
+import javax.swing.JFileChooser;
+import javax.swing.JOptionPane;
+
+public class core {
+
+	public static void main(String [] args){
+		int dialogButton = JOptionPane.showConfirmDialog (null, "Would You Like to Save your Previous Note First?","Warning", JOptionPane.YES_NO_OPTION);
+
+		if(dialogButton == JOptionPane.YES_OPTION){ //The ISSUE is here
+
+			/*JFileChooser saveFile = new JFileChooser();
+			int saveOption = saveFile.showSaveDialog(frame);
+			if(saveOption == JFileChooser.APPROVE_OPTION){
+
+				try{
+					BufferedWriter fileWriter = new BufferedWriter(new FileWriter(saveFile.getSelectedFile().getPath()));
+					fileWriter.write(textArea.getText());
+					fileWriter.close();
+				} catch(Exception ex){
+
+				}
+			}*/
+		}
+
+	}
+
+}

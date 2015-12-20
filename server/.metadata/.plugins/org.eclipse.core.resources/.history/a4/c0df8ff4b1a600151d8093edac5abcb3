@@ -1,0 +1,48 @@
+package peterDropServer;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+import javax.swing.JFileChooser;
+import javax.swing.JOptionPane;
+
+
+public class CoreCkeck {
+
+	public static void main(String [] args) throws IOException{
+		
+		ServerSocket listener = new ServerSocket(9090);
+        try {
+            while (true) {
+                Socket socket = listener.accept();
+                try {
+                	int dialogButton = JOptionPane.showConfirmDialog (null, "Would You Like to Save your Previous Note First?","Warning", JOptionPane.YES_NO_OPTION);
+
+            		if(dialogButton == JOptionPane.YES_OPTION){ //The ISSUE is here
+
+            			JFileChooser saveFile = new JFileChooser();
+            			saveFile.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+            			int saveOption = saveFile.showSaveDialog(null);
+            			PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
+            			if(saveOption == JFileChooser.APPROVE_OPTION){
+                            out.println("ok");
+            			}
+            			else {
+            				out.println("ko");
+            			}
+            		}
+                    
+                } finally {
+                    socket.close();
+                }
+            }
+        }
+        finally {
+            listener.close();
+        }
+
+	}
+
+}

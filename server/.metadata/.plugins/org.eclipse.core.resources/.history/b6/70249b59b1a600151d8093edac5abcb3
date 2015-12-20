@@ -1,0 +1,112 @@
+package peterDropServer;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.net.ServerSocket;
+
+import javax.swing.JFileChooser;
+import javax.swing.JOptionPane;
+
+
+
+import java.io.*;
+import java.net.*;
+
+public class CoreCkeck {
+
+ public static void main(String[] args) throws IOException {
+     int filesize=6022386; // filesize temporary hardcoded
+
+     long start = System.currentTimeMillis();
+     int bytesRead;
+     int current = 0;
+     int counterFiles = 1;
+     
+     // create socket
+     ServerSocket servsock = new ServerSocket(1149);
+     while (true) {
+       System.out.println("Waiting...");
+
+       Socket sock = servsock.accept();
+       System.out.println("Accepted connection : " + sock);
+
+       	// receive file
+         byte [] mybytearray  = new byte [filesize];
+         InputStream is = sock.getInputStream();
+         String path = "";
+         FileOutputStream fos = new FileOutputStream(path + Integer.toString(counterFiles) + ".jpg");
+         BufferedOutputStream bos = new BufferedOutputStream(fos);
+         bytesRead = is.read(mybytearray,0,mybytearray.length);
+         current = bytesRead;
+
+         do {
+            bytesRead =
+               is.read(mybytearray, current, (mybytearray.length-current));
+            if(bytesRead >= 0) current += bytesRead;
+         } while(bytesRead > -1);
+
+         bos.write(mybytearray, 0 , current);
+         bos.flush();
+         long end = System.currentTimeMillis();
+         System.out.println(end-start);
+         bos.close();
+
+       sock.close();
+       }
+ }
+
+}
+
+
+
+
+	
+/*
+
+public class Core {
+	
+	public static void main(String[] args) throws Exception {
+        ServerSocket listener = new ServerSocket(8901);
+        System.out.println("Tic Tac Toe Server is Running");
+        try {
+            while (true) {
+                Game game = new Game();
+                Game.Player playerX = game.new Player(listener.accept(), 'X');
+                Game.Player playerO = game.new Player(listener.accept(), 'O');
+                playerX.setOpponent(playerO);
+                playerO.setOpponent(playerX);
+                game.currentPlayer = playerX;
+                playerX.start();
+                playerO.start();
+            }
+        } finally {
+            listener.close();
+        }
+    }
+
+	public static void main(String [] args){
+		
+		
+		
+		int dialogButton = JOptionPane.showConfirmDialog (null, "Would You Like to Save your Previous Note First?","Warning", JOptionPane.YES_NO_OPTION);
+
+		if(dialogButton == JOptionPane.YES_OPTION){ //The ISSUE is here
+
+			JFileChooser saveFile = new JFileChooser();
+			int saveOption = saveFile.showSaveDialog(null);
+			if(saveOption == JFileChooser.APPROVE_OPTION){
+
+				try{
+					BufferedWriter fileWriter = new BufferedWriter(new FileWriter(saveFile.getSelectedFile().getPath()));
+					fileWriter.write(textArea.getText());
+					fileWriter.close();
+				} catch(Exception ex){
+
+				}
+			}
+		}
+
+	}
+
+}
+*/
