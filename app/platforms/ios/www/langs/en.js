@@ -1,7 +1,7 @@
 var strings = {};
 
 //TOPBAR TITLES
-strings.select_images = "Welcome to PeterDrop!";
+strings.select_images = "PeterDrop&nbsp;&nbsp;🚀";
 strings.info = "Info";
 
 			
