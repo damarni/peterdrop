@@ -1,0 +1,67 @@
+package peterDropServer;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
+import java.net.InetAddress;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.net.UnknownHostException;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.net.InetSocketAddress;
+import java.io.*;
+
+import javax.xml.ws.*;
+import javax.xml.ws.http.*;
+import javax.xml.transform.*;
+import javax.xml.transform.stream.*;
+
+@WebServiceProvider
+@ServiceMode(value = Service.Mode.PAYLOAD)
+public class Server implements Provider<Source> {
+
+    public Source invoke(Source request) {
+        return new StreamSource(new StringReader( "fdfdf"));
+    }
+
+    public static void main(String[] args) throws InterruptedException {
+
+        String address = "http://127.0.0.1:8080/";
+        Endpoint.create(HTTPBinding.HTTP_BINDING, new Server()).publish(address);
+
+        System.out.println("Service running at " + address);
+        System.out.println("Type [CTRL]+[C] to quit!");
+
+        Thread.sleep(Long.MAX_VALUE);
+    }
+}
+
+/*
+public class CoreConnection {
+	
+	public static void main(String [] args) throws IOException{
+		ServerSocket listener = new ServerSocket(1150);
+		try {
+			while (true) {
+				System.out.println("Waiting...");
+				Socket socket = listener.accept();
+				System.out.println("Accepted connection");
+				PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
+				out.println(InetAddress.getLocalHost().getHostName());
+				socket.close();
+			}
+		}
+		finally {
+			listener.close();
+		}
+	}
+	
+	
+}
+*/
+
+
