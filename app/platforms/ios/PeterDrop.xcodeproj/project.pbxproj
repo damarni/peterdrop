@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		069F780DA1E745A4952D958D /* SOSPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 02D41397A7D243129D7FC36D /* SOSPicker.m */; };
 		0C3F6BD2120048C9B8A5A6B6 /* Overlay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 656E07F211EA45E9BDB31030 /* Overlay@2x.png */; };
@@ -51,6 +50,8 @@
 		C83F05E3A5704951AD5231E3 /* ELCImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C3E1E07B294E4686BE0EAB /* ELCImagePickerController.m */; };
 		D3E37E411D8049E09468868F /* ELCAlbumPickerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 001C3D8D1DB94C05938C63D5 /* ELCAlbumPickerController.xib */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
+		6D1C922146454DCB8AE8B9CC /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C621B2E303746E7A5B30EAB /* CDVStatusBar.m */; };
+		8A6899FD11C74CF992F36174 /* CDVInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B9A22504E0D49DF86FD7B35 /* CDVInAppBrowser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +134,10 @@
 		ECD37D9CD8314D9EAD28CA37 /* ELCAssetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ELCAssetCell.m; path = com.synconset.imagepicker/ELCAssetCell.m; sourceTree = "<group>"; };
 		F4717BB9616F442CB67B1173 /* SOSPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SOSPicker.h; path = com.synconset.imagepicker/SOSPicker.h; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = PeterDrop/config.xml; sourceTree = "<group>"; };
+		5C621B2E303746E7A5B30EAB /* CDVStatusBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVStatusBar.m"; path = "cordova-plugin-statusbar/CDVStatusBar.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		728B3C2DC39A43E4ABB23721 /* CDVStatusBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVStatusBar.h"; path = "cordova-plugin-statusbar/CDVStatusBar.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		0B9A22504E0D49DF86FD7B35 /* CDVInAppBrowser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVInAppBrowser.m"; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		D972C50C3A1640ED82B0A41F /* CDVInAppBrowser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVInAppBrowser.h"; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +255,10 @@
 				57FF739292F64A168DA0A88A /* ELCAssetSelectionDelegate.h */,
 				1E309FFE3C9E4883B226B44B /* ELCAssetTablePicker.h */,
 				2B3BB5F41AD941F69B5DB96F /* ELCImagePickerController.h */,
+				5C621B2E303746E7A5B30EAB /* CDVStatusBar.m */,
+				728B3C2DC39A43E4ABB23721 /* CDVStatusBar.h */,
+				0B9A22504E0D49DF86FD7B35 /* CDVInAppBrowser.m */,
+				D972C50C3A1640ED82B0A41F /* CDVInAppBrowser.h */,
 			);
 			name = Plugins;
 			path = PeterDrop/Plugins;
@@ -331,7 +340,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 720;
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "PeterDrop" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -445,6 +454,8 @@
 				3ED92C84D7134015AB98DFAC /* ELCAssetCell.m in Sources */,
 				47029F1C0076453582E8E970 /* ELCAssetTablePicker.m in Sources */,
 				C83F05E3A5704951AD5231E3 /* ELCImagePickerController.m in Sources */,
+				6D1C922146454DCB8AE8B9CC /* CDVStatusBar.m in Sources */,
+				8A6899FD11C74CF992F36174 /* CDVInAppBrowser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
