@@ -12,6 +12,12 @@
         },
         "com.synconset.imagepicker": {
             "PACKAGE_NAME": "com.mlh.peterDrop"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.mlh.peterDrop"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.mlh.peterDrop"
         }
     },
     "dependent_plugins": {}

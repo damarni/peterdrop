@@ -1,7 +1,47 @@
 <div class="container">
-	<div id="select_images_container"></div>
-	<script> window.app.render_select_images(); </script>
-    <div id="button_next">
-        <script>print_string('#button_next', 'button_next');</script>
+    <div class="subtitle1">
+        <!--<script>print_string('#selectImages', 'SelectImages');</script>-->
+        Choose the photos you want to transfer
+    </div>
+    <div class="selected_images">
+        <img class="image" src="./img/example.jpg" />
+        <img class="image" src="./img/example.jpg" />
+        <img class="image" src="./img/example.jpg" />
+        <img class="image" src="./img/example.jpg" />
+        <!-- ADD PHOTOS -->
+        <div class="add_container">
+        	<img class="add_image" src="./img/imac.png" />
+        </div>
+    </div>
+    <div class="subtitle2">
+        Select the destination device
+    </div>
+    <div class="computers">
+        <table class="computers_table" cellpadding="0" cellspacing="0">
+            <tr class="computers_tr">
+                <td class="computers_img">
+                    <img class="computer_img" src="./img/icon-laptop.png" />
+                </td>
+                <td class="computers_name">
+                    Macbook Pro de Dani
+                </td>
+            </tr>
+            <tr class="computers_tr">
+                <td class="computers_img">
+                    <img class="computer_img" src="./img/icon-imac.png" />
+                </td>
+                <td class="computers_name">
+                    iMac de Dani
+                </td>
+            </tr>
+            <tr class="computers_tr">
+                <td class="computers_img">
+                    <img class="computer_img" src="./img/icon-other.png" />
+                </td>
+                <td class="computers_name">
+                    Other PC
+                </td>
+            </tr>
+        </table>
     </div>
 </div>

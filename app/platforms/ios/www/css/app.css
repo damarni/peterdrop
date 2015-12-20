@@ -3,457 +3,88 @@
 		
 /* ---------- MAIN ---------- */
 	
-	.page_main {
-		background-color: #3c454f;
+	.container {
+		
 	}
-	.main_app_container {
-		background-color: #fff;
-		padding: 35px 10px 30px 10px;
-	}
-		.main_app_icon_container {
-			padding-bottom: 10px;
-			text-align: center;
-		}
-			.main_app_icon_img {
-				width: 120px;
-			}
-	
-	.main_title {
-		font-size: 24px;
-		text-align: center;
-	}
-	
-	.main_spectator_url {
-		width: 100%;
-		background-color: #f2f2f2;
-		border-top: 1px solid #ddd;
-		border-bottom: 1px solid #ddd;
-		text-align: center;
-		margin-bottom: 20px;
-		padding: 20px 0px 20px 0px;
-	}
-		.main_spectator_url_text {
-			opacity: 0.5;
+		.subtitle1 {
 			font-size: 14px;
+			color: #666;
 			text-transform: uppercase;
+			margin: 20px 0px 10px 10px;
 		}
-		.main_spectator_url_link {
-			font-size: 26px;
-			margin-top: 5px;
+		.subtitle2 {
+			font-size: 14px;
+			color: #666;
+			text-transform: uppercase;
+			margin: 30px 0px 0px 10px;
 		}
-	
-	.main_settings {
-		background-color: rgba(255,255,255,0.3);
-		border: 1px solid #fff;
-		border-radius: 30px;
-		width: 50px;
-		height: 50px;
-		margin: 0px auto;
-		cursor: pointer;
+		.selected_images {
+			height: 100px;
+			overflow: scroll-x;
+			background-color: #eee;
+			overflow-x: scroll;
+    		overflow-y: hidden;
+    		white-space: nowrap;
+			width: 100%;
+			padding-left: 10px;
+			box-sizing: border-box;
+			position: relative;
+		}
+			.image {
+				height: 80px;
+				border-radius: 7px;
+				margin: 0px 0p 10px 10px;
+				position: relative;
+				top: -9px;
+			}
+			.add_container {
+				height: 100px;
+				width: 100px;
+				background-color: #ddd;
+				position: relative;
+				display: inline-block;
+			}
+				.add_image {
+					position: absolute;
+					top: 25px;
+					left: 25px;
+					width: 50px;
+				}
+			
+			
+			
+	.computers {
+		margin: 10px;
+		background-color: #eee;
+		padding: 10px 20px 10px 20px;
+		border: 1px solid #ddd;
+		border-radius: 10px;
 	}
-	    .main_settings:active {
-    	    opacity: 0.5;
-	    }
-		.main_settings_icon {
-			width: 30px;
-			margin: 10px 0px 0px 10px;
-		}
-	
-	.main_perform {
-		background-color: #3c454f;
-		margin-top: 5px;
-	}
-		.main_perform_table {
+		.computers_table {
 			width: 100%;
 		}
-			.main_perform_tr {
+			.computers_tr {
 				
 			}
-				.main_perform_td {
-					width: 50%;
+				.computers_img {
+					display: inline-block;
+					border-radius: 30px;
+					background-color: #D8414A;
+					border: 3px solid #fff;
+					width: 50px;
+					height: 50px;
+					position: relative;
+					margin: 5px 10px 5px 0px;
 				}
-					.main_perform_button_1 {
-						border: 1px solid #fff;
-						background-color: rgba(255,255,255,0.3);
-						color: #fff;
-						border-radius: 16px;
-						padding: 15px;
-						cursor: pointer;
-						margin: 10px 5px 10px 10px;
-						text-align: center;
-						font-size: 15px;
+					.computer_img {
+						display: inline-block;
+						width: 30px;
+						position: absolute;
+						top: 10px;
+						left: 10px;
 					}
-					    .main_perform_button_1:active {
-    					    opacity: 0.5;
-					    }
-					.main_perform_button_2 {
-						border: 1px solid #fff;
-						background-color: rgba(255,255,255,0.3);
-						color: #fff;
-						border-radius: 16px;
-						padding: 15px;
-						cursor: pointer;
-						margin: 10px 10px 10px 5px;
-						text-align: center;
-						font-size: 15px;
-					}
-					    .main_perform_button_2:active {
-    					    opacity: 0.5;
-					    }
-					.main_perform_button_text {
-						opacity: 0.7;
-					}
+				.computers_name {
+					display: inline-block;
+				}
 
 /* ---------- END MAIN ---------- */
-
-/* ---------- SETTINGS ---------- */
-	
-	.page_settings {
-		background-color: #f2f2f2;
-	}
-	.settings_input_url {
-		width: 100%;
-		background-color: #f2f2f2;
-		border-top: 1px solid #ddd;
-		border-bottom: 1px solid #ddd;
-		text-align: center;
-		margin: 15px 0px 10px 0px;
-		padding: 8px 0px 8px 0px;
-	}
-	
-	.settings_title {
-		text-transform: uppercase;
-		font-size: 13px;
-		margin: 30px 20px 7px 20px;
-		color: #aaa;
-	}
-	.settings_input_table_container {
-		padding: 7px 30px 7px 20px;
-		background-color: #FFF;
-		border-top: 1px solid #ddd;
-	}
-		.settings_input_table_container:last-child {
-			border-bottom: 1px solid #ddd;
-		}
-		.settings_input_table {
-			width: 100%;
-		}
-			.settings_input_tr {
-				
-			}
-				.settings_input_td_title {
-					text-align: left;
-					font-size: 17px;
-					white-space: nowrap;
-					width: 1%;
-					padding-top: 2px;
-				}
-					.settings_input_title {
-						
-					}
-					
-				.settings_input_td_input {
-					text-align: right;
-				}
-					.settings_input {
-						color: #49B7C2;
-						width: 100%;
-						height: 22px;
-						text-align: right;
-						font-size: 17px;
-						border: 0px;
-						-webkit-tap-highlight-color: rgba(0,0,0,0);
-					}
-						.settings_input:disabled {
-							color: #333;
-						}
-						
-				.settings_input_td_select {
-					color: #49B7C2;
-					font-size: 17px;
-					background: transparent;
-					-webkit-appearance: none;
-					text-align: right;
-					border: 0px;
- 					-webkit-tap-highlight-color: rgba(0,0,0,0);
-					padding-right: 20px;
-					background: url(../img/arrow.png) no-repeat right;
-					cursor: pointer;
-				}
-				
-	.settings_url {
-		text-align: center;
-		color: #333;
-		font-size: 16px;
-		margin-top: 10px;
-	}
-		.settings_url_text {
-			color: #333;
-		}
-		.settings_url_link {
-			color: #999;
-		}
-
-    .logout {
-        width: 100%;
-        text-align: center;
-        background-color: #ddd;
-        border-top: 1px solid #bbb;
-        border-bottom: 1px solid #bbb;
-        padding: 10px 0px 10px 0px;
-        cursor: pointer;
-        position: relative;
-        bottom: 0px;
-        font-size: 16px;
-        margin-top: 50px;
-    }
-/* ---------- END SETTINGS ---------- */
-
-/* ---------- PERFORM SELF ---------- */
-
-	.page_performSelf {
-		background-color: #3c454f;
-	}
-	.perform_spectatorLink {
-		padding: 40px 20px 40px 20px;
-		background-color: #f2f2f2;
-		border-bottom: 1px solid #ccc;
-		text-align: center;
-	}
-		.perform_spectatorLink_title {
-			color: #999;
-			font-size: 14px;
-			text-transform: uppercase;
-		}
-		.perform_spectatorLink_url {
-			margin-top: 5px;
-			font-size: 26px;
-		}
-		
-	.perform_googleLink {
-		padding: 40px 0px 40px 0px;
-		background-color: #ddd;
-		color: #fff;
-		text-align: center;
-		border-bottom: 1px solid #000;
-	}
-		.perform_googleLink_title {
-			color: #999;
-			font-size: 14px;
-			text-transform: uppercase;
-		}
-		.perform_googleLink_url {
-			padding: 10px 20px 10px 20px;
-			border-radius: 20px;
-			margin: 10px 20px 10px 20px;
-			border: 1px solid #fff;
-			background-color: #999;
-			cursor: pointer;
-			margin-top: 10px;
-			font-size: 26px;
-			min-height: 30px;
-		}
-		    .perform_googleLink_url:active {
-    		    opacity: 0.7;
-		    }
-		
-	.perform_sentence {
-		padding: 40px 20px 40px 20px;
-		background-color: #3c454f;
-		color: #fff;
-		text-align: center;
-	}
-		.perform_sentence_title {
-			color: #fff;
-			opacity: 0.5;
-			font-size: 14px;
-			text-transform: uppercase;
-		}
-		.perform_sentence_text {
-			margin-top: 10px;
-			font-size: 26px;
-		}
-
-/* ---------- END PERFORM SELF ---------- */
-
-/* ---------- END PERFORM SIDEKICK ---------- */
-
-	.page_performSidekick {
-		background-color: #3c454f;
-	}
-	.perform_reminder_text {
-		margin-top: 10px;
-		font-size: 24px;
-	}
-	
-/* ---------- END PERFORM SIDEKICK ---------- */
-
-/* ---------- LOGIN ---------- */
-
-	.page_login {
-		background-color: #f2f2f2;
-	}
-	
-	.login_forgot {
-		text-align: center;
-		color: #999;
-		font-size: 16px;
-		margin-top: 5px;
-	}
-		.login_forgot_text {
-			padding: 5px 20px 5px 20px;
-			display: inline-block;
-			cursor: pointer;
-		}
-			.login_forgot_text:active {
-				background-color: rgba(0,0,0,0.3);
-				border-radius: 5px;
-				color: #fff;
-			}
-	
-	.login_signup {
-		padding: 10px 30px 10px 30px;
-		text-align: center;
-		cursor: pointer;
-		font-size: 20px;
-		margin-top: 25px;
-		color: #fff;
-		background-color: #49B7C2;
-		border-top: 1px solid #40a1a9;
-		border-bottom: 1px solid #40a1a9;
-	}
-		.login_signup:active {
-			background-color: RGBA(45, 116, 121, 1);
-		}
-	
-/* ---------- END LOGIN ---------- */
-
-/* ---------- FORGOT ---------- */
-
-	.page_forgot {
-		background-color: #f2f2f2;
-	}
-	.recover_text {
-		padding: 10px 20px 20px 20px;
-		font-size: 14px;
-		color: #666;
-		text-align: left;
-	}
-
-
-/* ---------- END FORGOT ---------- */
-
-/* ---------- SIGNUP ---------- */
-
-	.page_register {
-		background-color: #f2f2f2;
-	}
-
-/* ---------- END SIGNUP ---------- */
-
-/* ---------- WELCOME ---------- */
-
-
-.info_videos {
-    width: 100%;
-    background-color: #f2f2f2;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    color: #fff;
-    padding: 20px 0px 20px 0px;
-    text-align: center;
-	font-size: 16px;
-}
-    .info_videos_table {
-        width: 100%;
-    }
-        .info_videos_tr {
-            
-        }
-            .info_videos_td_1 {
-                width: 50%;
-                text-align: right;
-            }
-                .info_videos_1 {
-                    padding: 10px 0px 10px 0px;
-                    background-color: #3c454f;
-                    border: #fff;
-                    border-radius: 10px;
-                    margin: 0px 10px 0px 20px;
-                    text-align: center;
-                }
-                
-            .info_videos_td_2 {
-                width: 50%;
-                text-align: left;
-            }
-                .info_videos_2 {
-                    padding: 10px 0px 10px 0px;
-                    background-color: #3c454f;
-                    border: #fff;
-                    border-radius: 10px;
-                    margin: 0px 20px 0px 10px;
-                    text-align: center;
-                }
-                    .info_videos_icon {
-                        width: 24px;
-                        margin: 5px 10px 5px 10px;
-                    }
-                    .info_videos_text {
-                        margin-bottom: 5px;
-                    }
-
-.welcome_tutorial {
-    padding: 30px 20px 20px 20px;
-    font-size: 16px;
-}
-    .welcome_tutorial_title{
-        font-size: 20px;
-        font-weight: bold;
-        margin: 30px 0px 5px 0px;
-        text-transform: uppercase;
-    }
-
-/* ---------- END WELCOME ---------- */
-
-/* ---------- OUR APPS ---------- */
-
-    .page_ourApps {
-        background-color: #3c454f;
-    }
-    
-    .ourapps_container {
-        padding: 20px 10px 20px 10px;
-        text-align: center;
-    }
-        .ourapps_box {
-            display: inline-block;
-            text-align: center;
-            cursor: pointer;
-            margin: 10px 5px 10px 5px;
-            width: 100px;
-        }
-            .ourapps_box:active {
-                opacity: 0.7;
-            }
-            .ourapps_img {
-                width: 80px;
-            }
-            .ourapps_title {
-                margin-top: 3px;
-                font-size: 14px;
-                color: #fff;
-            }
-    
-    .footer {
-    	opacity: 0.7;
-    	font-size: 14px;
-    	text-align: center;
-    	position: relative;
-    	width: 100%;
-    	color: #fff;
-		margin-top: 20px;
-    }
-
-/* ---------- END OUR APPS ---------- */
-
