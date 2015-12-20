@@ -40,14 +40,15 @@
 			.add_container {
 				height: 100px;
 				width: 100px;
-				background-color: #ddd;
+				background-color: #4EA772;
 				position: relative;
 				display: inline-block;
+				margin-left: 10px;
 			}
 				.add_image {
 					position: absolute;
 					top: 25px;
-					left: 25px;
+					left: 26px;
 					width: 50px;
 				}
 			
