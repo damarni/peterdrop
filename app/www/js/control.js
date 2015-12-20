@@ -27,24 +27,19 @@ function peterDrop(){
 		console.log('CKECKK');
 		//check connection
 		for (var i = 2; i <= 254; i++) {
-			
-			$.get('http://192.168.3.'+i+':1150/connect', function(data, status){
-        console.log("Data: " + data + "\nStatus: " + status);
-    });
-	/*
 			  $.ajax({
+				type: "GET",
 				url: 'http://192.168.3.'+i+':1150/connect',
-				success: function(data){
-					//do something
-					console.log(data);
-					$(".computers_table").append('<tr class="computers_tr"><td class="computers_img"><img class="computer_img" src="./img/icon-laptop.png" /></td><td class="computers_name">'+data+'</td></tr>');
+				dataType: "xml",
+				success: function(xml){
+					//var compu = $(xml).find('computer').
+					$(".computers_table").append('<tr class="computers_tr"><td class="computers_img"><img class="computer_img" src="./img/icon-laptop.png" /></td><td class="computers_name">'+xml+'</td></tr>');
 				},
 				error: function(){
 					// will fire when timeout is reached
 				},
 				timeout: 500 // sets timeout to 0.5 seconds
-			});*/
-			  
+			}); 
 		}
 			
 		
