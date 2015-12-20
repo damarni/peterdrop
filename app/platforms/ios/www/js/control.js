@@ -12,7 +12,7 @@ function peterDrop(){
 		window.imagePicker.getPictures(function(results) {
 			$('.selected_images .image').remove();
 			for (var i = 0; i < results.length; i++) {
-				$('.selected_images').prepend('<img class="image" src="'+results[i]+'" />'); 
+				$('.selected_images').prepend('<div class="image_container"><img class="image" src="'+results[i]+'" /></div>'); 
 			}
 		}, function (error) {
 			console.log('Error: ' + error);
