@@ -16,7 +16,7 @@ public class CoreSave {
 		int counterFiles = 1;
 
 		// create socket
-		ServerSocket servsock = new ServerSocket(1151);
+		ServerSocket servsock = new ServerSocket(1152);
 		try {
 			while (true) {
 				System.out.println("Waiting...");

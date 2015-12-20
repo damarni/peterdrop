@@ -1,0 +1,28 @@
+package peterDropServer;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.net.InetAddress;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+
+public class CoreConnection {
+
+	public static void main(String [] args) throws IOException{
+		ServerSocket listener = new ServerSocket(1150);
+		try {
+			while (true) {
+				System.out.println("Waiting...");
+				Socket socket = listener.accept();
+				System.out.println("Accepted connection");
+				PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
+				out.println(InetAddress.getLocalHost().getHostName());
+				socket.close();
+			}
+		}
+		finally {
+			listener.close();
+		}
+	}
+}

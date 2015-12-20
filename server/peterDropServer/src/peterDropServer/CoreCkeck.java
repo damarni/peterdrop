@@ -13,7 +13,7 @@ public class CoreCkeck {
 
 	public static void main(String [] args) throws IOException{
 
-		ServerSocket listener = new ServerSocket(1150);
+		ServerSocket listener = new ServerSocket(1151);
 		try {
 			while (true) {
 				System.out.println("Waiting...");

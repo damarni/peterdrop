@@ -24,6 +24,22 @@ module.exports = [
             "cordova.InAppBrowser.open",
             "window.open"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-console/www/console-via-logger.js",
+        "id": "cordova-plugin-console.console",
+        "pluginId": "cordova-plugin-console",
+        "clobbers": [
+            "console"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-console/www/logger.js",
+        "id": "cordova-plugin-console.logger",
+        "pluginId": "cordova-plugin-console",
+        "clobbers": [
+            "cordova.logger"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -32,7 +48,8 @@ module.exports.metadata =
     "cordova-plugin-whitelist": "1.2.0",
     "com.synconset.imagepicker": "1.0.7",
     "cordova-plugin-statusbar": "2.0.1-dev",
-    "cordova-plugin-inappbrowser": "1.1.1"
+    "cordova-plugin-inappbrowser": "1.1.1",
+    "cordova-plugin-console": "1.0.2"
 }
 // BOTTOM OF METADATA
 });

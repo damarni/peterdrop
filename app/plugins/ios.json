@@ -18,6 +18,9 @@
         },
         "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "com.mlh.peterDrop"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.mlh.peterDrop"
         }
     },
     "dependent_plugins": {}
