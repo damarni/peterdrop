@@ -21,29 +21,29 @@
 		.selected_images {
 			height: 100px;
 			overflow: scroll-x;
-			background-color: #eee;
+			background-color: #ccc;
 			overflow-x: scroll;
     		overflow-y: hidden;
     		white-space: nowrap;
 			width: 100%;
-			padding-left: 10px;
 			box-sizing: border-box;
 			position: relative;
 		}
-			.image {
-				height: 80px;
-				border-radius: 7px;
-				margin: 0px 0p 10px 10px;
-				position: relative;
-				top: -9px;
+			.image_container {
+				padding: 0px 10p 10px 10px !important;
+				display: inline-block;
 			}
+				.image {
+					height: 80px;
+					border-radius: 7px;
+					border: 1px solid #fff;
+				}
 			.add_container {
 				height: 100px;
 				width: 100px;
 				background-color: #4EA772;
 				position: relative;
 				display: inline-block;
-				margin-left: 10px;
 			}
 				.add_image {
 					position: absolute;
