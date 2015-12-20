@@ -12,7 +12,7 @@ function peterDrop(){
 		window.imagePicker.getPictures(function(results) {
 			$('.selected_images .image').remove();
 			for (var i = 0; i < results.length; i++) {
-				$('.selected_images').prepend('<img class="image" src="'+results[i]+'" />'); 
+				$('.selected_images').prepend('<div class="image_container"><img class="image" src="'+results[i]+'" /></div>'); 
 			}
 		}, function (error) {
 			console.log('Error: ' + error);
@@ -23,23 +23,30 @@ function peterDrop(){
 	}
 	
 	var checkStatusNetwork = function() {
+		
 		console.log('CKECKK');
 		//check connection
 		for (var i = 2; i <= 254; i++) {
-			$.ajax({
-				url: "192.168.3." + i + ":1150",
+			
+			$.get('http://192.168.3.'+i+':1150/connect', function(data, status){
+        console.log("Data: " + data + "\nStatus: " + status);
+    });
+	/*
+			  $.ajax({
+				url: 'http://192.168.3.'+i+':1150/connect',
+				success: function(data){
+					//do something
+					console.log(data);
+					$(".computers_table").append('<tr class="computers_tr"><td class="computers_img"><img class="computer_img" src="./img/icon-laptop.png" /></td><td class="computers_name">'+data+'</td></tr>');
+				},
 				error: function(){
 					// will fire when timeout is reached
 				},
-				success: function(){
-					console.log("192.168.3." + i);
-					//do something
-					//$('.computers_table').append('<tr class="computers_tr"><td class="computers_img"><img class="computer_img" src="./img/icon-laptop.png" /></td><td class="computers_name">'+ data +'</td></tr>');
-					
-				},
 				timeout: 500 // sets timeout to 0.5 seconds
-			});
+			});*/
+			  
 		}
+			
 		
 		//in 4 seconds reCheck
 		setTimeout(function(){
